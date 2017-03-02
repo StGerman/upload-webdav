@@ -6,6 +6,7 @@
   "author": "Stanislav German <stas.german@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "caporal": "^0.3.0"
+    "caporal": "^0.3.0",
+    "webdav-fs": "^1.0.0-rc7"
   }
 }
