@@ -1,8 +1,11 @@
 {
   "name": "deploy-webdav",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "upload-webdav.js",
   "repository": "git@github.com:StGerman/upload-webdav.git",
   "author": "Stanislav German <stas.german@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "caporal": "^0.3.0"
+  }
 }
