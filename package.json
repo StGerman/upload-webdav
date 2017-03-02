@@ -1,0 +1,8 @@
+{
+  "name": "deploy-webdav",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:StGerman/upload-webdav.git",
+  "author": "Stanislav German <stas.german@gmail.com>",
+  "license": "MIT"
+}
