@@ -4,7 +4,7 @@ const webdav_fs = require('webdav-fs')
 const jsonfile = require('jsonfile')
 
 const config_path_validator = /^.*.json$/
-
+const path_resolver = require('path').resolve
 prog
   .version('1.0.0')
   .command('init', 'initialize webdav credentials')
@@ -16,8 +16,9 @@ prog
       password: 'password'
     }
     jsonfile.writeFile(args['config'], default_config, function (err) {
-      console.error(err)
+      err && console.error(err)
     })
+    console.info('path to new config file is: ',path_resolver(__dirname, args['config']))
   })
   .command('deploy', 'Deploy an application')
   .argument('[config]', 'path to config', null, 'upload-webdav.json')
